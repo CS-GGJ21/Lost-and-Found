@@ -4,26 +4,39 @@ using System.Collections.Generic;
 
 public class FieldOfView : MonoBehaviour
 {
-
-    public float viewRadius;
+    [SerializeField]
+    private float viewRadius;
     [Range(0, 360)]
-    public float viewAngle;
+    [SerializeField]
+    private float viewAngle;
 
-    public LayerMask targetMask;
-    public LayerMask obstacleMask;
+    [SerializeField]
+    private LayerMask targetMask;
+    [SerializeField]
+    private LayerMask obstacleMask;
 
-    [HideInInspector]
-    public List<Transform> visibleTargets = new List<Transform>();
+    private List<Transform> visibleTargets = new List<Transform>();
 
-    public float meshResolution;
-    public int edgeResolveIterations;
-    public float edgeDstThreshold;
+    [SerializeField]
+    private float meshResolution;
+    [SerializeField]
+    private int edgeResolveIterations;
+    [SerializeField]
+    private float edgeDstThreshold;
 
-    public float maskCutawayDst = .1f;
+    [SerializeField]
+    private float maskCutawayDst = .1f;
 
-    public MeshFilter viewMeshFilter;
+    private MeshFilter viewMeshFilter;
     Mesh viewMesh;
 
+    // Set up references
+    void Awake()
+    {
+        viewMeshFilter = this.gameObject.GetComponent<MeshFilter>();
+    }
+
+    // Start is called before the first frame update
     void Start()
     {
         viewMesh = new Mesh();
@@ -43,6 +56,7 @@ public class FieldOfView : MonoBehaviour
         }
     }
 
+    // LateUpdate is called right before the render engine
     void LateUpdate()
     {
         DrawFieldOfView();
@@ -206,6 +220,21 @@ public class FieldOfView : MonoBehaviour
             pointA = _pointA;
             pointB = _pointB;
         }
+    }
+
+    public float GetRadius()
+    {
+        return viewRadius;
+    }
+
+    public float GetAngle()
+    {
+        return viewAngle;
+    }
+
+    public List<Transform> GetTargets()
+    {
+        return visibleTargets;
     }
 
 }

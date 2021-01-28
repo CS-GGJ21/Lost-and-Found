@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 1322644439}
   - component: {fileID: 1322644438}
   - component: {fileID: 1322644437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,11 +682,10 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 1024
-  visibleTargets: []
   meshResolution: 1
   edgeResolveIterations: 4
   edgeDstThreshold: 5
-  viewMeshFilter: {fileID: 1322644441}
+  maskCutawayDst: 0.1
 --- !u!114 &1322644438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,7 +695,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1322644435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ce368a8d8474fcbbed4f32d233445c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a28d466dac28f0488c74aa3c1818677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
