@@ -4,10 +4,13 @@ using System.Collections;
 public class CharacterController : MonoBehaviour
 {
 
-    public float moveSpeed = 6;
-    new Rigidbody rigidbody;
-    Camera viewCamera;
-    Vector3 velocity;
+    [SerializeField]
+    private float moveSpeed = 6;
+    [SerializeField]
+    private float turningSpeed = 1;
+    private new Rigidbody rigidbody;
+    private Camera viewCamera;
+    private Vector3 velocity;
 
     // Set up references
     void Awake()
