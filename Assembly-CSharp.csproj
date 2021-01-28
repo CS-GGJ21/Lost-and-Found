@@ -64,6 +64,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\FieldOfView.cs" />
+    <Compile Include="Assets\Scripts\FieldOfViewEditor.cs" />
+    <None Include="Assets\Shaders\Stencil Object.shader" />
+    <None Include="Assets\Shaders\Stencil Mask.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
