@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{68B87DED-27B1-CFDB-CB4F-71D627F7064C}</ProjectGuid>
+    <ProjectGuid>{A4E4808A-FE31-584F-DA10-93FDAAF93292}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -597,31 +597,31 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/_DEV/GGJ21/Lost&amp;Found/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/_DEV/GGJ21/Lost-and-Found/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
