@@ -15,10 +15,25 @@ public class FieldOfViewEditor : Editor {
 		Handles.DrawLine (fow.transform.position, fow.transform.position + viewAngleA * fow.GetRadius());
 		Handles.DrawLine (fow.transform.position, fow.transform.position + viewAngleB * fow.GetRadius());
 
+        // draw ray for visible targets
 		Handles.color = Color.red;
 		foreach (Transform visibleTarget in fow.GetTargets()) {
 			Handles.DrawLine (fow.transform.position, visibleTarget.position);
 		}
-	}
+
+        // draw ray for visible obstacles
+        Handles.color = Color.green;
+        foreach (Transform visibleTarget in fow.GetNearbyObstacles(true))
+        {
+            Handles.DrawLine(fow.transform.position, visibleTarget.position);
+        }
+
+        // draw ray for non visible, nearby obstacles
+        Handles.color = Color.yellow;
+        foreach (Transform visibleTarget in fow.GetNearbyObstacles(false))
+        {
+            Handles.DrawLine(fow.transform.position, visibleTarget.position);
+        }
+    }
 
 }

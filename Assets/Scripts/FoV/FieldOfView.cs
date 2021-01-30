@@ -15,7 +15,9 @@ public class FieldOfView : MonoBehaviour
     [SerializeField]
     private LayerMask obstacleMask;
 
-    private List<Transform> visibleTargets = new List<Transform>();
+    private List<Transform> visibleTargets = new List<Transform>();     // list of visible targets inside the FoV
+    private List<Transform> visibleObstacles = new List<Transform>();   // list of visible obstacles inside the FoV
+    private List<Transform> nearbyObstacles = new List<Transform>();    // list of obstacles inside the FoV range
 
     [SerializeField]
     private float meshResolution;
@@ -52,7 +54,12 @@ public class FieldOfView : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(delay);
+
+            // update visible targets
             FindVisibleTargets();
+
+            // update nearby obstacles
+            FindNearbyObstacles();
         }
     }
 
@@ -67,9 +74,9 @@ public class FieldOfView : MonoBehaviour
         visibleTargets.Clear();
         Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
 
-        for (int i = 0; i < targetsInViewRadius.Length; i++)
+        foreach (Collider col in targetsInViewRadius)
         {
-            Transform target = targetsInViewRadius[i].transform;
+            Transform target = col.transform;
             Vector3 dirToTarget = (target.position - transform.position).normalized;
             if (Vector3.Angle(transform.forward, dirToTarget) < viewAngle / 2)
             {
@@ -82,8 +89,23 @@ public class FieldOfView : MonoBehaviour
         }
     }
 
+    void FindNearbyObstacles()
+    {
+        nearbyObstacles.Clear();
+        Collider[] obstaclesInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, obstacleMask);
+
+        foreach (Collider col in obstaclesInViewRadius)
+        {
+            Transform obstacle = col.transform;
+            nearbyObstacles.Add(obstacle);
+        }
+    }
+
     void DrawFieldOfView()
     {
+        // reset list of visible obstacles
+        visibleObstacles.Clear();
+
         int stepCount = Mathf.RoundToInt(viewAngle * meshResolution);
         float stepAngleSize = viewAngle / stepCount;
         List<Vector3> viewPoints = new List<Vector3>();
@@ -177,6 +199,12 @@ public class FieldOfView : MonoBehaviour
 
         if (Physics.Raycast(transform.position, dir, out hit, viewRadius, obstacleMask))
         {
+            // add obstacle to the list of visibles for this frame if it isn't already
+            if (!visibleObstacles.Contains(hit.transform))
+            {
+                visibleObstacles.Add(hit.transform);
+            }
+
             return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
         }
         else
@@ -237,4 +265,23 @@ public class FieldOfView : MonoBehaviour
         return visibleTargets;
     }
 
+    public List<Transform> GetNearbyObstacles(bool visible)
+    {
+        List<Transform> obstacles = new List<Transform>();
+        if (visible)
+        {
+            obstacles = visibleObstacles;
+        }
+        else
+        {
+            foreach (Transform obstacle in nearbyObstacles)
+            {
+                if (!visibleObstacles.Contains(obstacle))
+                {
+                    obstacles.Add(obstacle);
+                }
+            }
+        }
+        return obstacles;
+    }
 }
