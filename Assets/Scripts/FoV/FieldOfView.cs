@@ -6,8 +6,8 @@ public class FieldOfView : MonoBehaviour
 {
     [SerializeField]
     private float viewRadius;
-    [Range(0, 360)]
     [SerializeField]
+    [Range(0, 360)]
     private float viewAngle;
 
     [SerializeField]

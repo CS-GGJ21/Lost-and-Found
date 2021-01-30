@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Characters\CharacterController.cs" />
     <Compile Include="Assets\Scripts\FoV\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\FoV\FieldOfViewEditor.cs" />
+    <Compile Include="Assets\Scripts\Managers\MazeViewManager.cs" />
     <None Include="Assets\Shaders\Stencil Object.shader" />
     <None Include="Assets\Shaders\Stencil Mask.shader" />
     <Reference Include="UnityEngine">
