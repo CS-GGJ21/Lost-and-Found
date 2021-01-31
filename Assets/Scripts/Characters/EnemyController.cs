@@ -10,6 +10,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private float speed;
     [SerializeField]
+    private float chasingTime;
+    private float timer;
+    [SerializeField]
     private float detectionDistance;
     [SerializeField]
     private LayerMask detectionMask;
@@ -29,6 +32,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         state = 0;
+        timer = 0;
     }
 
     // Update is called once per frame
@@ -36,7 +40,16 @@ public class EnemyController : MonoBehaviour
     {
         switch (state)
         {
-            case 0:
+            case 0:     // idle
+                FindNewTarget();
+                if (target != null)
+                {
+                    navMeshAgent.SetDestination(target.position);
+                    Debug.DrawLine(this.gameObject.transform.position, target.position, Color.magenta, 0.1f);
+                }
+                break;
+
+            case 1:     // chasing
                 FindNewTarget();
                 if (target != null)
                 {
@@ -60,6 +73,7 @@ public class EnemyController : MonoBehaviour
                 {
                     target = player.transform;
                     lowest_distance = distance;
+                    timer = 0;
                 }
             }
         }
@@ -73,6 +87,7 @@ public class EnemyController : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, detectionDistance, detectionMask) && hit.collider.gameObject == player && distance < lowest_distance) {
                     target = player.transform;
                     lowest_distance = distance;
+                    timer = 0;
                 }
             }
         }
