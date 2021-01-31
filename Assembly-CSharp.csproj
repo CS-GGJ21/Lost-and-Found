@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Characters\EnemyController.cs" />
     <Compile Include="Assets\Scripts\FoV\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\FoV\FieldOfViewEditor.cs" />
+    <Compile Include="Assets\Scripts\LifeBar\BarraDeVida.cs" />
     <Compile Include="Assets\Scripts\Managers\MazeViewManager.cs" />
     <Compile Include="Assets\Scripts\camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\camera\CameraFollow2.cs" />
