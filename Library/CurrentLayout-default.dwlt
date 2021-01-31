@@ -21,7 +21,11 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 300}
+=======
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> parent of 039a28f... update: test prefab
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -113,10 +117,17 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
   controlID: 59
+=======
+  m_MinSize: {x: 679, y: 421}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+  controlID: 1256
+>>>>>>> parent of 039a28f... update: test prefab
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +152,11 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 60
+=======
+  controlID: 1257
+>>>>>>> parent of 039a28f... update: test prefab
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 403
     height: 403
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -216,10 +231,14 @@ MonoBehaviour:
     y: 0
     width: 983
     height: 947
-  m_MinSize: {x: 202, y: 442}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 202, y: 421}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
+<<<<<<< HEAD
   controlID: 117
+=======
+  controlID: 1314
+>>>>>>> parent of 039a28f... update: test prefab
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,7 +257,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 983
+<<<<<<< HEAD
     height: 420
+=======
+    height: 524
+>>>>>>> parent of 039a28f... update: test prefab
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
@@ -264,9 +287,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 420
+    y: 524
     width: 983
-    height: 527
+    height: 423
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
@@ -324,9 +347,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 403
-    y: 493
+    y: 597
     width: 981
-    height: 506
+    height: 402
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -336,7 +359,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 981, y: 485}
+  m_TargetSize: {x: 981, y: 381}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -344,7 +367,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 1
+  m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
@@ -353,8 +376,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -490.5
     m_HBaseRangeMax: 490.5
-    m_VBaseRangeMin: -242.5
-    m_VBaseRangeMax: 242.5
+    m_VBaseRangeMin: -190.5
+    m_VBaseRangeMax: 190.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -373,9 +396,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 981
-      height: 485
+      height: 381
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 490.5, y: 242.5}
+    m_Translation: {x: 490.5, y: 190.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -383,12 +406,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -490.5
-      y: -242.5
+      y: -190.5
       width: 981
-      height: 485
+      height: 381
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 981, y: 506}
+  m_LastWindowPixelSize: {x: 981, y: 402}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -423,9 +446,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: a0650000
       m_LastClickedID: 0
       m_ExpandedIDs: f2f8ffff58f9ffff0cfbffff
+=======
+      m_SelectedIDs: 904e0000
+      m_LastClickedID: 20112
+      m_ExpandedIDs: 6afbffff
+>>>>>>> parent of 039a28f... update: test prefab
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -499,9 +528,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: ec650000
     m_LastClickedID: 26092
     m_ExpandedIDs: 00000000d6650000ee65000000ca9a3b
+=======
+    m_SelectedIDs: cc650000
+    m_LastClickedID: 26060
+    m_ExpandedIDs: 00000000b2650000c665000000ca9a3b
+>>>>>>> parent of 039a28f... update: test prefab
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -529,7 +564,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000d6650000
+=======
+    m_ExpandedIDs: 00000000b265000000ca9a3b
+>>>>>>> parent of 039a28f... update: test prefab
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -635,7 +674,7 @@ MonoBehaviour:
     x: 403
     y: 73
     width: 981
-    height: 399
+    height: 503
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 399f76617a696bc4c8014fd8b3aaa9e8
@@ -647,9 +686,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 10.452997, y: -3.4298658, z: 47.28362}
     speed: 2
     m_Value: {x: 10.452997, y: -3.4298658, z: 47.28362}
+=======
+    m_Target: {x: 3.582491, y: 1.7902002, z: 0.40765762}
+    speed: 2
+    m_Value: {x: 3.582491, y: 1.7902002, z: 0.40765762}
+>>>>>>> parent of 039a28f... update: test prefab
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 2
@@ -699,9 +744,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.3034186, y: -0.35349074, z: 0.12238782, w: -0.8763576}
   m_Size:
+<<<<<<< HEAD
     m_Target: 18.808985
     speed: 2
     m_Value: 18.808985
+=======
+    m_Target: 11.265087
+    speed: 2
+    m_Value: 11.265087
+>>>>>>> parent of 039a28f... update: test prefab
   m_Ortho:
     m_Target: 0
     speed: 2

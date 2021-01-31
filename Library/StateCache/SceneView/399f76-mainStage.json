@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":2,"name":"Shaded Wireframe","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":false,"pivot":{"x":10.452997207641602,"y":-3.429865837097168,"z":47.28361892700195},"rotation":{"x":-0.3034190833568573,"y":-0.35349127650260928,"z":0.12238800525665283,"w":-0.8763589859008789},"size":18.808984756469728,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":2,"name":"Shaded Wireframe","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":false,"pivot":{"x":3.582490921020508,"y":1.7902002334594727,"z":0.4076576232910156},"rotation":{"x":-0.3034190833568573,"y":-0.35349127650260928,"z":0.12238800525665283,"w":-0.8763589859008789},"size":11.265087127685547,"orthographic":false}
+>>>>>>> parent of 039a28f... update: test prefab
