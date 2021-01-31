@@ -10,6 +10,7 @@ public class MazeViewManager : MonoBehaviour
     public float nearbyOpacity;
     [Range(0, 1)]
     public float directSightOpacity;
+    public bool softening;              // controls how opacity is applied on nearby objects
     [SerializeField]
     private GameObject targetPlayer;
     private Transform[] environment;
@@ -28,13 +29,13 @@ public class MazeViewManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     // LateUpdate is called right before the render engine
@@ -80,7 +81,16 @@ public class MazeViewManager : MonoBehaviour
                         obj.GetComponent<MeshRenderer>().enabled = true;
                     }
                     Color c = obj.GetComponent<MeshRenderer>().material.color;
-                    c.a = nearbyOpacity;
+                    if (softening)
+                    {
+                        float dstToPlayer = Vector3.Distance(obj.position, targetPlayer.transform.position);
+                        float radius = targetPlayer.GetComponent<FieldOfView>().GetRadius();
+                        c.a = (radius - dstToPlayer) / radius;
+                    }
+                    else
+                    {
+                        c.a = nearbyOpacity;
+                    }
                     obj.GetComponent<MeshRenderer>().material.color = c;
                 }
             }

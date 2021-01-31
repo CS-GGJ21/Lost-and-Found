@@ -63954,6 +63954,7 @@ MonoBehaviour:
   idleOpacity: 0
   nearbyOpacity: 0.33
   directSightOpacity: 1
+  softening: 1
   targetPlayer: {fileID: 1322644435}
 --- !u!4 &1108155238
 Transform:
@@ -108209,7 +108210,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.74e-43, y: 9.4e-44, z: 0, w: -4.685192}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 1.83e-42, w: 5.9e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
