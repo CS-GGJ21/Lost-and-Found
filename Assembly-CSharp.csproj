@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Characters\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\Characters\EnemyController.cs" />
     <Compile Include="Assets\Scripts\FoV\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\FoV\FieldOfViewEditor.cs" />
     <Compile Include="Assets\Scripts\Managers\MazeViewManager.cs" />

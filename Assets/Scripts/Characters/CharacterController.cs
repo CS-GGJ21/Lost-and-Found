@@ -7,7 +7,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 6;
     [SerializeField]
-    private float turningSpeed = 1;
+    //private float turningSpeed = 1;
     private new Rigidbody rigidbody;
     private Camera viewCamera;
     private Vector3 velocity;
