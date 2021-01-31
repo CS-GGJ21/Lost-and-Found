@@ -13529,11 +13529,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghostly: 0
-  detectionDistance: 99999
   speed: 3.5
+  detectionDistance: 99999
   detectionMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1280
 --- !u!195 &229731773
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -108164,7 +108164,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 9.282e-42, z: 0, w: 1.825361e+10}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 2.75508e-40, w: -7.61e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

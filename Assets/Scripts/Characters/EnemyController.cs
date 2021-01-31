@@ -8,9 +8,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private bool ghostly;
     [SerializeField]
-    private float detectionDistance;
-    [SerializeField]
     private float speed;
+    [SerializeField]
+    private float detectionDistance;
     [SerializeField]
     private LayerMask detectionMask;
     private int state;
@@ -68,11 +68,9 @@ public class EnemyController : MonoBehaviour
             foreach (GameObject player in players)
             {
                 float distance = Vector3.Distance(this.transform.position, player.transform.position);
-                //Ray ray = Physics.Raycast(this.transform.position, (player.transform.position - this.transform.position).normalized, detectionDistance, detectionMask);
+                Ray ray = new Ray(this.transform.position, (player.transform.position - this.transform.position).normalized);
                 RaycastHit hit;
-                if (Physics.Raycast(this.transform.position, (player.transform.position - this.transform.position).normalized, out hit) 
-                    && hit.collider.gameObject == player 
-                    && distance < lowest_distance) {
+                if (Physics.Raycast(ray, out hit, detectionDistance, detectionMask) && hit.collider.gameObject == player && distance < lowest_distance) {
                     target = player.transform;
                     lowest_distance = distance;
                 }
