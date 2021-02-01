@@ -6,16 +6,22 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField]
-    private bool ghostly;
+    private bool ghostly;                   // determines si this enemy can't go throught walls
     [SerializeField]
-    private float speed;
+    private bool patrol;                    // determines if this enemy has a patrol routine or holds when idle
     [SerializeField]
-    private float chasingTime;
+    private float fleeingSpeed;             // determines agent speed when idle
+    [SerializeField]
+    private float idleSpeed;                // determines agent speed when idle
+    [SerializeField]
+    private float chasingSpeed;             // determines agent speed when idle
+    [SerializeField]
+    private float chasingTime;              // determines how long chases the player when they disappear from the direct sight line
     private float timer;
     [SerializeField]
-    private float detectionDistance;
+    private float detectionDistance;        // detection range (a negative value will be used as infinite)
     [SerializeField]
-    private LayerMask detectionMask;
+    private LayerMask detectionMask;        // mask of elements that interact with the sight line
     private int state;
     private NavMeshAgent navMeshAgent;
     private GameObject[] players;
@@ -33,6 +39,10 @@ public class EnemyController : MonoBehaviour
     {
         state = 0;
         timer = 0;
+        if (detectionDistance < 0)
+        {
+            detectionDistance = Mathf.Infinity;
+        }
     }
 
     // Update is called once per frame
@@ -40,6 +50,14 @@ public class EnemyController : MonoBehaviour
     {
         switch (state)
         {
+            case -1:    // fleeing
+                FindNewTarget();
+                if (target != null)
+                {
+                    navMeshAgent.SetDestination(target.position);
+                    Debug.DrawLine(this.gameObject.transform.position, target.position, Color.magenta, 0.1f);
+                }
+                break;
             case 0:     // idle
                 FindNewTarget();
                 if (target != null)
